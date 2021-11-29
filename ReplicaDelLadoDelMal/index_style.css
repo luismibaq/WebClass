@@ -1,0 +1,53 @@
+*{
+  margin:0px;
+  padding: 0px;
+  background: #113355;
+  font-family: Arial;
+}
+div.Encavesado{
+  color: white;
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+  border: 6px solid #446688;
+  border-style: double;
+  margin: 5px;
+}
+div.derecha{
+  color: #cccccc;
+  float: right;
+  width: 30%;
+  height: 100%;
+}
+div.izquierda{
+  color: #cccccc;
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+div.centro{
+  float: left;
+  color: white;
+  overflow: hidden;
+  width: 40%;
+}
+div.Articulo{
+  text-align: justify;
+  font: Serif;
+  margin: 5px;
+}
+h5{
+  color: #557799;
+}
+h3{
+  color: orange;
+}
+h6{
+  margin-top: 10px;
+}
+hr{
+  border: 1px dashed;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}

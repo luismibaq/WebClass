@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="series.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+  <?php
+
+  $mysqli=new mysqli("localhost","root","123456","imagen");
+
+  if (mysqli_connect_errno()) {
+      die("Error al conectar: ".mysqli_connect_error());
+  }
+  else{
+     $result=$mysqli-query("SELECT * FROM imageInicio");
+  }
+  ?>
+  <ul class="navigation">
+    <li class="navigation-tab"><img src="Imagenes/LogoNetflix.png" width="100"></li>
+    <li class="navigation-tab"><a class="current active" href="peliculas.html">Inicio</a></li>
+    <li class="navigation-tab"><a href="series.html" style="color: #fff;">Series</a></li>
+    <li class="navigation-tab"><a href="pelicula.html">Películas</a></li>
+    <li class="navigation-tab"><a href="novedades.html">Novedades populares</a></li>
+  </ul>
+  <img src="Imagenes/Titulo2.png" width="30%" style="margin-top:60px; margin-left:10px;">
+  <div id="dataPeli" class="datosPeli"></div>
+  <table style="margin-top:60px;">
+    <tr>
+      <td><a href="" class="botonR" style="padding-top: 10px; padding-bottom: 10px;"> <i class="fa fa-play" aria-hidden="true"></i>. Reproducir</a></td>
+      <td><a href="" class="botonI" style="padding-top: 10px; padding-bottom: 10px;"><i class="fa fa-info-circle" aria-hidden="true"></i> Más información</a></td>
+    </tr>
+  </table>
+
+  <div id="pelis" class="peliculas" style="margin-top:90px;"></div>
+  <div class="peliculas-recomendadas contenedor">
+    <div class="contenedor-titulo-controles">
+      <h4 style="color:white; margin-left:20px;">Series Recomendadas ></h4>
+      <div class="indicadores"></div>
+    </div>
+
+    <div class="contenedor-principal">
+      <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+      <div class="contenedor-carousel">
+        <div class="carousel" id="carousel">
+
+        </div>
+      </div>
+      <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+    </div>
+    <script src="Scripts/peliculas.js"></script>
+  </div>
+  <script>
+    fetch('pelis2.json')
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        appendData(data);
+      })
+      .catch(function(err) {
+        console.log('error: ' + err);
+      });
+
+    function appendData(data) {
+      var mainContainer = document.getElementById("dataPeli");
+      var div = document.createElement("div");
+      div.innerHTML = data[0].Texto;
+      mainContainer.appendChild(div);
+      var mainContainer = document.getElementById("carousel");
+      var div = document.createElement("div");
+      for (var i = 1; i < data.length; i++) {
+        var div = document.createElement("div");
+        div.setAttribute("class", "pelicula");
+        var a = document.createElement("A");
+        var x = document.createElement("IMG");
+        x.setAttribute("src", data[i].src);
+        a.appendChild(x);
+        div.appendChild(a);
+        mainContainer.appendChild(div);
+      }
+    }
+  </script>
+</body>
+
+</html>
