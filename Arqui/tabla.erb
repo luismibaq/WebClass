@@ -1,0 +1,58 @@
+<!-- Proyecto final de Arquitectura de software -->
+<!-- Profesor: Ariel Ortiz -->
+<!-- Fecha: 04-Jun-2021 -->
+<!-- Authors: A01745997 Luis Miguel Baqueiro Vallejo -->
+<!-- A01746958 Ricardo Velázquez -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <title>Patterns quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+  </head>
+
+  <body class="w3-win8-pink">
+    <div class="w3-container w3-purple">
+      <h1 class="w3-center">
+        <b>Patterns Quiz</b>
+      </h1>
+    </div>
+    <div class="w3-card-4">
+      <div class="card w3-purple">
+        <div class="card-body">
+          <form method="GET" action="/quiz">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Number of questions" aria-label="no_questions" aria-describedby="no_questions" name="no_questions" min="1" max="10" required="required">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">1-10</span>
+              </div>
+            </div>
+            <div class="w3-center">
+              <button type="submit" style="" class="w3-button w3-center w3-deep-purple w3-block w3-round-xxlarge">Start</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <h2 class="w3-center w3-text-purple" style="text-shadow:1px 1px 0 #444">
+      <b>Scoreboard</b>
+    </h2>
+    <table class="w3-table w3-centered w3-pale-red">
+      <tr class="w3-purple">
+        <th>Initials</th>
+        <th>Grade</th>
+      </tr>
+        <% @tabla.each do |fila|%>
+          <tr>
+            <td style="color:black"><%= fila['Initials'] %></td>
+            <td style="color:black"><%= fila['Score'] %></td>
+          </tr>
+        <%end%>
+    </table>
+  </body>
+
+</html>

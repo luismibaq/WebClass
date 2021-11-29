@@ -1,0 +1,54 @@
+body{
+    background-color: skyblue;
+}
+
+h1{
+    color: #69578A
+}
+
+#enlace{
+    font-family: monospace;
+}
+
+#texto{
+    font-family: sans-serif;
+    font-size: 15px;
+    text-justify: auto;
+    word-spacing: normal;
+    margin: 1em;
+}
+
+img{
+    border: none;
+    position: inherit;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+ol{
+    background: #6e86c7;
+    border: 1px solid;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ol li{
+    float: left;
+    width: 19%;
+}
+
+ol li a{
+    border-left: 1px solid;
+    border-right: 1px solid;
+    display: block;
+    padding: .3em;
+    text-decoration: none;
+}
+
+#registro{
+   float: right;
+}

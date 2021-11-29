@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+  <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+  <script src="Scripts\formulario.js"></script>
+</head>
+
+<body background="Imagenes\Figura02.jpg">
+  <h1>FORMULARIO</h1>
+  <form method="POST" class="form-register" onsubmit="return validar();">
+    <h2 class="form-titulo">REGISTRARSE</h2>
+    <div class="contenedor">
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-1">
+      <input type="text" id="apellidos" name="apellidos" placeholder="Apellido" class="input-1">
+      <input type="email" id="email" name="email" placeholder="Email" class="input-2">
+      <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-1">
+      <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" class="input-1">
+      <input type="text" id="telefono" name="telefono" placeholder="Teléfono" class="input-2">
+      <input type="submit" href="index.html" value="Registrar" class="btn-enviar">
+      <p class="form-link">Ya estas Registrado?<a href="#">Ingresa Aquí</a></p>
+    </div>
+  </form>
+</body>
+
+</html>

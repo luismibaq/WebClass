@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="stlyle.css">
+  <script src="Scripts\inicio.js"></script>
+</head>
+
+<body>
+  <div class="header" >
+    <img src="Imagenes/LogoNetflix.png" width="100" style="float: left;">
+  </div>
+  <div class="">
+    <div class="espacioI">
+      <h1></h1>
+    </div>
+      <div class="boxInicio">
+        <h2 style="text-align: left;">Inicia sesión</h2>
+        <form method="POST" class="form-register" onsubmit="return validar();">
+          <input class="textField2" type="email" id="email" name="email" placeholder="  Email o número de teléfono" style="">
+          <input class="textField2" type="password" id="contraseña" name="contraseña" placeholder="  Contraseña" style="">
+          <input class="buttonField" type="submit" id="button" name="inicio" value="Iniciar sesión">
+        </form>
+        <br>
+        <table style="width:70%;">
+          <tr>
+            <td><input class="checked" type="checkbox" id="button" name="recordatorio" tabindex="0" data-uia="rememberMe" checked=""></td>
+            <td>
+              <h5>Recuérdame</h5>
+            </td>
+            <td style="text-align: right;">
+              <h5>¿Necesitas ayuda?</h5>
+            </td>
+          </tr>
+        </table>
+        <div class="espacioI">
+          <h2></h2>
+        </div>
+        <div class="margen">
+          <h5>Iniciar sesión con Facebook</h5>
+          <h2></h2>
+          <h4 style="color: ">¿Primera vez en Netflix? <a style="color:white;">Suscribete ya</a></h4>
+          <h2></h2>
+          <h5>Esta página está protegida por Google reCAPTCHA</h5>
+          <h5>para comprobar que no eres un robot <a style="color:blue;"> Más info</a></h5>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+<footer class="footer">
+      <p style="text-align:left; color: #757575">¿Preguntas? llama al 800-283-3300</p>
+      <div class="footer-cols">
+        <ul>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Preferencias de cookies</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Información corporativa</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Términos de uso</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Publicidad</a></li>
+        </ul>
+      </div>
+  </footer>
+</html>

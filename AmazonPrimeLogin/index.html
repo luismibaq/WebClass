@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Iniciar sesión en Amazon</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="Scripts\formulario.js"></script>
+</head>
+
+<body>
+  <div class="Página">
+    <div class="imagen">
+      <img src="Imagenes\prime.png" class="logo">
+    </div>
+    <div class="box">
+      <form method="POST" class="form-register" onsubmit="return validar();">
+        <h1 class="titulo">Crear cuenta</h1>
+        <h5 class="texto">Nombre</h5>
+        <input type="text" id="nombre" class="inputB">
+        <h5 class="texto">Correo electrónico</h5>
+        <input type="email" id="email" name="email" class="inputB">
+        <h5 class="texto">Contraseña</h5>
+        <input type="password" id="contraseña" name="contraseña" placeholder="  Al menos 6 caracteres" class="inputB">
+        <p><i class="iconoI">i</i> La contraseña debe tener 6 caracteres como mínimo.</p>
+        <h5 class="texto">Confirmar contraseña</h5>
+        <input type="password" id="contraseñaR" name="contraseñaR" class="inputB">
+        <input class="boton" value="Crea tu cuenta de Amazon" type="submit">
+      </form>
+      <div class="Legal">
+        <div class="margen">
+          Al identificarte aceptas nuestras <a class="a-links" href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_register_notification_condition_of_use?ie=UTF8&nodeId=508088">Condiciones de uso y venta</a>. Consulta nuestro
+          <a class="a-links" href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_register_notification_privacy_notice?ie=UTF8&nodeId=468496">Aviso de privacidad</a>, nuestro <a class="a-links"
+            href="https://www.amazon.com/gp/help/customer/display.html/?nodeId=201890250">Aviso de Cookies</a> y nuestro <a class="a-links" href="https://www.amazon.com/b/?&node=5160028011">Aviso sobre publicidad basada en los intereses del
+            usuario</a>.
+        </div>
+      </div>
+      <div class="border">
+        <p class="blanc">a</p>
+      </div>
+      <div class="margen">
+        ¿Ya tiene una cuenta? <a class="a-links"
+          href="https://www.amazon.com/ap/signin?clientContext=135-7364251-3183248&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&accountStatusPolicy=P1&language=es_ES&pageId=amzn_prime_video_desktop_us&openid.return_to=https%3A%2F%2Fwww.primevideo.com%2Fauth%2Freturn%2Fref%3Dav_auth_ap%3F_encoding%3DUTF8%26location%3D%252Fsignup%252Fref%253Datv_nb_signup_mlp&prevRID=F7XKCW69HCFCVR23AKXJ&openid.assoc_handle=amzn_prime_video_desktop_us&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Iniciar
+          sesion ►</a>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="border">
+        <p class="blanc">a</p>
+      </div>
+      <div class="Links">
+        <a class="a-link" href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&amp;nodeId=508088">
+          Condiciones de uso
+        </a>
+        <span class="a-link"></span>
+        <a class="a-link" href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&amp;nodeId=468496">
+          Aviso de privacidad
+        </a>
+        <span class="a-link"></span>
+        <a class="a-link" href="https://www.amazon.com//help">
+          Ayuda
+        </a>
+      </div>
+      <div class="Copy">
+        <span class="derechos">
+          © 1996-2021, Amazon.com, Inc. o afiliados. Todos los derechos reservados.
+        </span>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

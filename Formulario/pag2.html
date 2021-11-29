@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- A01745997 Luis Miguel Baqueiro Vallejo
+     A01169628 Héctor Iván Aguirre Arteaga-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <title>Form 2</title>
+</head>
+
+<body>
+  <div class="w3-row w3-margin">
+    <div class="w3-container w3-quarter"></div>
+    <div class="w3-container w3-half">
+      <div class="w3-card-4 w3-margin-top w3-border w3-round">
+        <img src="Imagenes/Hack.png" alt="" style="width: 100%;">
+      </div>
+      <div class="w3-card-4  w3-margin-top w3-border w3-round-large" >
+        <header class="w3-container w3-grey"  style="border-top-right-radius: 8px; border-top-left-radius: 8px;">
+          <p></p>
+        </header>
+        <div class="w3-container">
+          <h2>Hackathon Digital 2021</h2>
+          <p></p>
+          <p style="color: red;">* Obligatório</p>
+        </div>
+      </div>
+      <div class="w3-card-4 w3-margin-top w3-border w3-round-large">
+        <header class="w3-container w3-grey" style="border-top-right-radius: 8px; border-top-left-radius: 8px;">
+          <h6>Queremos conocerte</h6>
+        </header>
+        <div class="w3-container">
+          <h4>¿Cual es tu nombre? <span style="color: red">*</span></h4>
+          <h6 style="font-size: 13px;">Tus nombres, apellido paterno y materno</h6>
+          <input type="text" id="nombre" name="nombre" placeholder="Su respuesta" style="width: 100%; margin-bottom: 10px; border: none; border-bottom: 1px solid gray;" />
+        </div>
+      </div>
+      <div class="w3-card-4 w3-padding w3-margin-top w3-border w3-round-large">
+        <h4>¿Que edad tienes? <span style="color: red">*</span></h4>
+        <input type="text" id="edad" name="edad" placeholder="Su respuesta" style="width: 100%; margin-bottom: 10px; border: none; border-bottom: 1px solid gray;" />
+      </div>
+      <div class="w3-card-4 w3-padding w3-margin-top w3-border w3-round-large">
+        <h4>¿Cual es tu matricula? <span style="color: red">*</span></h4>
+        <h6 style="font-size: 13px;">A00000000</h6>
+        <input type="text" id="matr" name="matricula" placeholder="Su respuesta" style="width: 100%; margin-bottom: 10px; border: none; border-bottom: 1px solid gray;" />
+      </div>
+      <div class="w3-card-4 w3-padding w3-margin-top w3-border w3-round-large">
+        <h4>¿Donde reside actualmente? <span style="color: red">*</span></h4>
+        <h6 style="font-size: 13px;">Indicanos tu región y ciudad</h6>
+        <input type="text" id="ciudad" name="ciudad" placeholder="Su respuesta" style="width: 100%; margin-bottom: 10px; border: none; border-bottom: 1px solid gray;" />
+      </div>
+      <div class="w3-card-4 w3-padding w3-margin-top w3-border w3-round-large">
+        <h4>¿A que te dedicas? <span style="color: red">*</span></h4>
+        <form>
+          <table style="text-align: left; width: 100%;">
+            <tr>
+              <th style="font-weight: normal;">
+                <input type="radio" id="univ" name="dec" value="Soy universitario/a" />
+                <label for="univ">Soy universitario/a</label>
+              </th>
+            </tr>
+            <tr>
+              <th style="font-weight: normal;">
+                <input type="radio" id="lider" name="dec" value="Soy lider en mi comunidad" />
+                <label for="lider">Soy lider en mi comunidad</label>
+              </th>
+            </tr>
+            <tr>
+              <th style="font-weight: normal;">
+                <input type="radio" id="emp" name="dec" value="Soy emprendedor/a" />
+                <label for="emp">Soy emprendedor/a</label>
+              </th>
+            </tr>
+            <tr>
+              <th style="font-weight: normal;">
+                <input type="radio" id="otro" name="dec" value="Otro" />
+                <label for="otro">Otro:</label>
+                <input type="text" id="Otro" name="otroTxt" value="" style="border: none; border-bottom: 1px solid gray;">
+              </th>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="w3-bar w3-margin-top">
+        <a href="pag1.html" class="w3-btn w3-white w3-border w3-round w3-margin-right">Volver</a>
+        <a href="pag3.html" class="w3-btn w3-white w3-border w3-round">Próxima</a>
+      </div>
+      <div class="w3-container w3-quarter"></div>
+    </div>
+</body>
+
+</html>

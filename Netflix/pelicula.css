@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #999;
+  background-image: url("Imagenes/Principal.jpg");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.botonR{
+  background-color: white;
+  color: black;
+  margin-left: 15px;
+  padding-left: 2rem;
+  padding-right: 2.4rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.botonI{
+  background-color: rgba(109,109,110,0.7);
+  color: white;
+  margin-left: 15px;
+  padding-left: 2rem;
+  padding-right: 2.4rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.navigation {
+  background: #000;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-bottom: 5px;
+}
+
+.navigation-tab {
+  position: relative;
+  transition: color .4s;
+  display: block;
+  list-style-type: none;
+  margin-left: 18px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #aaa;
+  cursor: default;
+  align-items: center;
+  font-size: smaller;
+}
+.datosPeli{
+  width: 30%;
+  color: white;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #999;
+  text-decoration: none;
+}
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
+
+.peliculas-recomendadas {
+	margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel {
+		overflow: visible;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.peliculas-recomendadas .indicadores,
+	.peliculas-recomendadas .flecha-izquierda,
+	.peliculas-recomendadas .flecha-derecha {
+		display: none;
+	}
+}
+
+.pelicula{
+  border-radius: 50%;
+  margin-left: 5px;
+}

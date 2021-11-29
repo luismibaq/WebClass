@@ -1,0 +1,41 @@
+<!-- Proyecto final de Arquitectura de software         -->
+<!-- Profesor: Ariel Ortiz                              -->
+<!-- Fecha: 04-Jun-2021                                 -->
+<!-- Authors: A01745997 Luis Miguel Baqueiro Vallejo    -->
+<!--          A01746958 Ricardo Velázquez               -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Patterns quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+</head>
+
+<body class="w3-win8-pink">
+  <div class="w3-container w3-purple">
+    <h1 class="w3-center"><b>Quiz</b></h1>
+  </div>
+  <div class="w3-card-4 w3-display-middle">
+    <div class="card w3-purple">
+      <header class="w3-container w3-deep-purple">
+        <b><%=@numero_pregunta%>/<%= @cant_preguntas%></b>
+      </header>
+      <div class="w3-container">
+        <h2><%=@pregunta["question"]%></h2>
+        <br>
+        <form method="GET" action="/revisarPregunta">
+          <%@pregunta["options"].each do |option|%>
+          <button class="btn btn-success btn-block w3-deep-purple" name="respuesta" type="submit" value=<%=option%>><%=option%></button>
+          <br>
+          <% end%>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

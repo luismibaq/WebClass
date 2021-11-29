@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="novedades.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+  <?php
+
+  $mysqli=new mysqli("localhost","root","123456","imagen");
+
+  if (mysqli_connect_errno()) {
+      die("Error al conectar: ".mysqli_connect_error());
+  }
+  else{
+     $result=$mysqli-query("SELECT * FROM imageInicio");
+  }
+  ?>
+  <ul class="navigation">
+    <li class="navigation-tab"><img src="Imagenes/LogoNetflix.png" width="100"></li>
+    <li class="navigation-tab"><a class="current active" href="peliculas.html">Inicio</a></li>
+    <li class="navigation-tab"><a href="series.html" >Series</a></li>
+    <li class="navigation-tab"><a href="pelicula.html">Películas</a></li>
+    <li class="navigation-tab"><a href="novedades.html" style="color: #fff;">Novedades populares</a></li>
+  </ul>
+  <div id="pelis" class="peliculas" style="margin-top:10px;"></div>
+  <div class="peliculas-recomendadas contenedor">
+    <div class="contenedor-titulo-controles">
+      <h4 style="color:white; margin-left:20px;">Estrenos esta semana</h4>
+      <div class="indicadores"></div>
+    </div>
+
+    <div class="contenedor-principal">
+      <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+      <div class="contenedor-carousel">
+        <div class="carousel" id="carousel">
+          <div class="pelicula">
+            <a href="#"><img src="Imagenes/Default/1.jpg"></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="Imagenes/Default/17.jpg"></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="Imagenes/Default/18.jpg"></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="Imagenes/Default/19.jpg"></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="Imagenes/Default/10.jpg"></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="Imagenes/Default/18.jpg"></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="Imagenes/Default/40.jpg"></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="Imagenes/Default/34.jpg"></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="Imagenes/Default/25.jpg"></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="Imagenes/Default/45.jpg"></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="Imagenes/Default/50.jpg"></a>
+          </div>
+        </div>
+      </div>
+      <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+    </div>
+    <div id="pelis" class="peliculas" style="margin-top:10px;"></div>
+    <div class="peliculas-recomendadas contenedor">
+      <div class="contenedor-titulo-controles">
+        <h4 style="color:white; margin-left:20px;">Lo nuevo en Netflix</h4>
+        <div class="indicadores"></div>
+      </div>
+
+      <div class="contenedor-principal">
+        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+        <div class="contenedor-carousel">
+          <div class="carousel" id="carousel">
+            <div class="pelicula">
+              <a href="#"><img src="Imagenes/Default/50.jpg"></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="Imagenes/Default/45.jpg"></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="Imagenes/Default/25.jpg"></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="Imagenes/Default/34.jpg"></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="Imagenes/Default/40.jpg"></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="Imagenes/Default/18.jpg"></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="Imagenes/Default/40.jpg"></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="Imagenes/Default/34.jpg"></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="Imagenes/Default/25.jpg"></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="Imagenes/Default/45.jpg"></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="Imagenes/Default/50.jpg"></a>
+            </div>
+          </div>
+        </div>
+        <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+      </div>
+      <div id="pelis" class="peliculas" style="margin-top:10px;"></div>
+      <div class="peliculas-recomendadas contenedor">
+        <div class="contenedor-titulo-controles">
+          <h4 style="color:white; margin-left:20px;">Estrenos esta semana</h4>
+          <div class="indicadores"></div>
+        </div>
+
+        <div class="contenedor-principal">
+          <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+          <div class="contenedor-carousel">
+            <div class="carousel" id="carousel">
+              <div class="pelicula">
+                <a href="#"><img src="Imagenes/Default/49.jpg" style="filter: grayscale(1)"></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="Imagenes/Default/48.jpg" style="filter: grayscale(1)"></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="Imagenes/Default/47.jpg" style="filter: grayscale(1)"></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="Imagenes/Default/45.jpg" style="filter: grayscale(1)"></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="Imagenes/Default/39.jpg" style="filter: grayscale(1)"></a>
+              </div>
+            </div>
+          </div>
+          <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+        </div>
+    <script src="Scripts/peliculas.js"></script>
+  </div>
+</body>
+
+</html>

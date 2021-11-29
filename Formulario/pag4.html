@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Form 4</title>
+  </head>
+  <body>
+    <div class="w3-row w3-margin">
+      <div class="w3-container w3-quarter"></div>
+      <div class="w3-container w3-half">
+        <div class="w3-card-4 w3-margin-top w3-border w3-round">
+          <img src="Imagenes/Hack.png" alt="" style="width: 100%" />
+        </div>
+        <div class="w3-card-4 w3-padding w3-margin-top">
+          <h1>Hackathon Digital</h1>
+          <p>
+            Hackathon Digital 2021 Gracias por inscribirte a la hackathon
+            digital y aceptar este desafio! Tus ideas son muy valiosas para
+            nosotros
+          </p>
+          <p>
+            Nos pondremos en contacto contigo a través de tu correo. Mientras
+            tanto, te invitamos a unirte a nuestro grupo de Whatsapp para
+            obtener todas las actualizaciones
+          </p>
+          <div class="w3-row w3-container">
+            <div class="w3-quarter">
+              <p>!Te esperamos!</p>
+            </div>
+            <div class="w3-rest w3-container">
+              <button
+                onclick="getInfo()"
+                class="w3-button w3-black w3-hover-red w3-center"
+              >
+                Ver respuestas
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          id="table"
+          class="w3-container w3-card-4 w3-padding w3-margin-top"
+          hidden
+        >
+          <div class="w3-container">
+            <h2>Tus respuestas</h2>
+
+            <table class="w3-table-all w3-hoverable">
+              <thead>
+                <tr class="w3-light-grey">
+                  <th>Informacion</th>
+                  <th>Respuesta</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>Email</td>
+                <td id="emailRes"></td>
+              </tr>
+              <tr>
+                <td>Nombre</td>
+                <td id="nombreRes"></td>
+              </tr>
+              <tr>
+                <td>Edad</td>
+                <td id="edadRes"></td>
+              </tr>
+              <tr>
+                <td>Matricula</td>
+                <td id="matriculaRes"></td>
+              </tr>
+              <tr>
+                <td>Residencia</td>
+                <td id="resRes"></td>
+              </tr>
+              <tr>
+                <td>Eres</td>
+                <td id="eresRes"></td>
+              </tr>
+              <tr>
+                <td>Universidad</td>
+                <td id="uniRes"></td>
+              </tr>
+              <tr>
+                <td>Carrera</td>
+                <td id="carreraRes"></td>
+              </tr>
+              <tr>
+                <td>Anio</td>
+                <td id="anioRes"></td>
+              </tr>
+              <tr>
+                <td>Telefono</td>
+                <td id="telRes"></td>
+              </tr>
+              <tr>
+                <td>Opinion</td>
+                <td id="opRes">Sin opinion</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="w3-container w3-quarter"></div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

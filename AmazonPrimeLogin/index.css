@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 19px;
+  color: #111;
+}
+
+.Página {
+  text-align: center;
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+.box {
+  text-align: left;
+  position: relative;
+  display: block;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+  background-color: #fff;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px 15px;
+}
+
+.titulo {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-bottom: 10px;
+}
+
+.texto {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputB {
+  margin: 0;
+  margin-bottom: 10px;
+  border: 1px solid #a6a6a6;
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.boton {
+  background: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+  width: 100%;
+  border-radius: 10px;
+  border-radius: 3px;
+  border-width: 1px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.iconoI {
+  color: #0066c0;
+  font-style: italic;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.border {
+  background: linear-gradient(to right,#fff,rgba(255,255,255,0),#fff), linear-gradient(to bottom, rgba(0, 0, 0, .14), rgba(0, 0, 0, .03) 3px, transparent);
+}
+
+.a-link {
+  width: 20px;
+  padding: 10px;
+  font-size: 11px;
+  align-items: center;
+  cursor: pointer;
+  color: #0066c0;
+}
+
+.a-links {
+  width: 20px;
+  cursor: pointer;
+  color: #0066c0;
+}
+
+.derechos {
+  font-size: 11px;
+  color: #555;
+}
+
+.margen {
+  margin-top: 10px;
+  margin: 5px;
+}
+.blanc{
+  color: #fff;
+}
